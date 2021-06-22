@@ -1,0 +1,70 @@
+/**
+ * GET => buscar informacao
+ * POST => inserir criar uma informacao
+ * PUT => Alterar uma informacao
+ * DELETE => Remover um Dado
+ * PATCH => Alterar uma informacao especifica 
+ * 
+ */
+
+/**
+ * Tipos de parametros
+ * Route Params =>
+ * Query Params =>
+ * 
+ * Body Params =>
+ * 
+ */
+
+
+
+
+
+ 97  mkdir nlw
+  298  ls
+  299  cd nlw
+  300  ls
+  301  mkdir nlwValoriza
+  302  ls
+  303  cd nlwValoriza/
+  304  code .
+  305  yarn init -y
+  306  ls
+  307  yarn add typescript -D
+  308  yarn tsc --init
+  309  quit\
+  310  quit
+  311  exit
+  312  node index.ts 
+  313  yarn tsc
+  314  node index.js
+  315  yarn add express 
+  316  yarn add @types/express -D
+  317  yarn tsc
+  318  node src/server.js 
+  319  yarn add ts-node-dev -D
+  320  exit
+  321  yarn dev
+  322  exit
+  323  exit
+  324  yarn dev
+  325  history
+  326  yarn run dev
+  327  sudo apt-get update
+  328  sudo apt-get upgrade
+  329  sudo apt-get update
+  330  reboot
+  331  yarn add typeorm reflect-metadata sqlite3
+  332  history
+
+app.get("/test", (request, response) =>{
+
+    return response.send("ola NLW")
+})
+// http://localhost:3000/test
+
+app.post("/test-post", (request, response) =>{
+
+    return response.send("ola NLW metodo POST")
+})
+// http://localhost:3000/test-post
