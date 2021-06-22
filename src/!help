@@ -56,9 +56,9 @@
   330  reboot
   331  yarn add typeorm reflect-metadata sqlite3
   332  history
-
+teste giti hub
 app.get("/test", (request, response) =>{
-
+git commit -m "Version:0.0.1" 
     return response.send("ola NLW")
 })
 // http://localhost:3000/test
