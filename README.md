@@ -1,4 +1,4 @@
-# nlwValoriza
+# nlwValoriza V0.0.2
 System
 Ubuntu: Ubuntu 20.04.2 LTS
 Nodejs: v14.16.0
