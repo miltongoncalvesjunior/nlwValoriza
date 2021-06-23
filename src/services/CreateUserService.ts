@@ -1,6 +1,8 @@
 import { getCustomRepository } from "typeorm";
 import { UsersRepositories } from "../repositories/UsersRepositories";
 
+// camada responsavel por contem toda regra de negocio e validacoes 
+
 interface IUserRequest {
     name: string;
     email: string;
@@ -11,7 +13,9 @@ class CreateUserService {
     async execute({ name, email, admin }: IUserRequest) {
         const usersRepository = getCustomRepository(UsersRepositories);
 
-        console.log ("Email", email);
+        
+        
+        //regras de negocio  tratando dados  email, usuario com mesmo email e cadastro sem email
 
         if (!email) {
             throw new Error("Email incorrect");
@@ -31,6 +35,7 @@ class CreateUserService {
             email,
             admin,
         });
+
 
         await usersRepository.save(user);
 
