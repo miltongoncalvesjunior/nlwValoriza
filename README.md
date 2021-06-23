@@ -1,4 +1,11 @@
 
+Descrição 
+Sistema para fazer elogio a outros usuários por meio de tags.
+
+Regras de negocio se encontra no arquivo help.txt
+
+
+
 System
 Ubuntu 20.04.2 LTS
 Nodejs: v14.16.0
