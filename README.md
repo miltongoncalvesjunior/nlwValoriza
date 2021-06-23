@@ -2,7 +2,7 @@
 Descrição 
 Sistema para fazer elogio a outros usuários por meio de tags.
 
-Regras de negocio se encontra no arquivo help.txt
+Regras de negocio se encontra na arq  /src/!help.txt
 
 
 
