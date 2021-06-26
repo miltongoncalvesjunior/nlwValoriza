@@ -4,10 +4,7 @@ import { CreateTagService } from "../services/CreateTagService";
   
 
 class CreateTagController {
-    static handle(arg0: string, handle: any) {
-        throw new Error("Method not implemented.");
-    }
-
+    
     async handle(request: Request, response: Response) {
         const { name} = request.body;
 
