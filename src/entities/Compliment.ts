@@ -2,11 +2,11 @@ import {Entity, PrimaryColumn, Column, CreateDateColumn, JoinColumn, ManyToOne }
 import {v4 as uuid} from "uuid"
 import { Tag } from "./Tag";
 import { User } from "./User";
-
+import { Exclude } from "class-transformer";
  
 
 @Entity("compliments")
-class Compliment{
+class Compliment {
 
     @PrimaryColumn()
     readonly id: string;
@@ -24,7 +24,7 @@ class Compliment{
     @JoinColumn({name: "user_receiver"})
     @ManyToOne(() => User)
     userReceiver: User;
-    
+        
     @Column()
     tag_id: string;
 
@@ -39,7 +39,7 @@ class Compliment{
     @CreateDateColumn()
     created_at: Date;
 
-
+    
     constructor(){
         if(!this.id){
             this.id = uuid();

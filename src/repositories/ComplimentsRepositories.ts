@@ -1,4 +1,4 @@
-import { EntityRepository, Repository } from "typeorm";
+import {Repository, EntityRepository } from "typeorm";
 import { Compliment } from "../entities/Compliment";
 
 // repositorios de usuarios
