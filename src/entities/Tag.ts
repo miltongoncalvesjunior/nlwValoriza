@@ -1,5 +1,5 @@
-import {Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm";
-
+import { Expose, Exclude } from "class-transformer";
+import { Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn } from "typeorm";
 import { v4 as uuid } from "uuid";
 
 @Entity("tags")
@@ -7,7 +7,7 @@ class Tag {
 
     @PrimaryColumn()
     readonly id: string;
-    
+
     @Column()
     name: string;
 
@@ -17,6 +17,11 @@ class Tag {
     @UpdateDateColumn()
     updated_at: Date;
 
+  
+    @Expose({ name: "nameCustom" })
+    nameCustom(): string {
+        return `#${this.name}`;
+    }
 
     constructor(){
         if(!this.id){
@@ -25,7 +30,4 @@ class Tag {
     }
 }
 
-
 export { Tag };
-
-// entidade < - > ORM < - > BD (users)

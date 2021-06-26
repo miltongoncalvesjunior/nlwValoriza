@@ -35,8 +35,8 @@ class CreateComplimentService {
 
         await complimentsRepositories.save(compliment);
         
-            return compliment;
+        return compliment;
       
     }
 }
-export { CreateComplimentService }
+export { CreateComplimentService };
