@@ -1,20 +1,24 @@
 - Cadastro de usuario
 
-[ x ]  Nao e permitido cadastrar mais de um usuario com o mesmo e-mail # 
-[ x ] Nao e permitido cadastrar usuario sem email
+[ x ]  -Nao e permitido cadastrar mais de um usuario com o mesmo e-mail.  
+[ x ]  -Nao e permitido cadastrar usuario sem email.
   class = CreateUserService
 },
 
 - Cadastro  de TAG
 
-[ x  ] Nao  e permitido cadastrar mais de uma tag com o mesmo nome
-[  x ] Nao e permitido cadastrar tag sem nome
-[  x ] Nao e permitido o cadastro por usuario que nao sejam admnistrador
+[ x  ] Nao  e permitido cadastrar mais de uma tag com o mesmo nome.
+
+[  x ] Nao e permitido cadastrar tag sem nome.
+
+[  x ] Nao e permitido o cadastro por usuario que nao sejam admnistrador.
 
 - Cadastro de elogios
-[ x ] Nao e permitido um usuario cadastar um elogio pra si
-[ x ] Nao e permitido um usuario cadastrar elogios para usuarios invalidos
-[x  ] O usuario precisa estar autenticado na aplicacao
+[ x ] Nao e permitido um usuario cadastar um elogio pra si.
+
+[ x ] Nao e permitido um usuario cadastrar elogios para usuarios invalidos .
+
+[x  ] O usuario precisa estar autenticado na aplicacao .
 
 
 System
